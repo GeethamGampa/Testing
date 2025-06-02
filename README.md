@@ -17,7 +17,27 @@ assertFalse(x) — checks if x is False
 assertNotEqual(a, b) — checks if a is not equal to b
 
 assertRaises(Exception) — checks if a specific error is raised
+```
 
+## PyTesting
+
+Pytest is a popular testing tool in Python that helps us check if our small code parts (called units) work correctly by themselves.
+
+We write test functions that call our code with different inputs and compare the actual results with what we expect. If the results match, the test passes; if not, it fails.
+
+Pytest makes writing tests easy and clear. Here are some common ways to check conditions in pytest:
+```
+assert a == b — checks if a equals b
+
+assert x — checks if x is True
+
+assert not x — checks if x is False
+
+assert a != b — checks if a is not equal to b
+
+Use with pytest.raises(Exception): to check if a certain error is raised
+```
+Pytest automatically finds and runs all test functions in files named like test_*.py.
 
 
 
